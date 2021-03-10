@@ -1,5 +1,5 @@
 //--------------
-//factorialize a number
+//factorialize a number (recursive)
 //-------------
 
 function factorialize(num){
@@ -12,3 +12,18 @@ function factorialize(num){
 }
 
 console.log(factorialize(5));
+
+
+//----------------
+// factorialize (iterative)
+// -----------------
+
+function factorial(num) { 
+            var ans=1; 
+              
+            for (var i = 2; i <= num; i++) 
+                ans = ans * i; 
+            return ans; 
+        } 
+
+console.log(factorial(5));
